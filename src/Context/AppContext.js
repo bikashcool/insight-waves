@@ -15,7 +15,6 @@ export const AppContextProvider = ({children}) => {
         try{
             const result = await fetch(url);
             const data = await result.json();
-            console.log(data);
             setPage(data.page);
             setPosts(data.posts);
             setTotalPages(data.totalPages);
